@@ -316,7 +316,7 @@ if __name__== "__main__":
     plt.scatter(original_data["Time (h)"].iloc[knee_point], original_data["Utot (V)"].iloc[knee_point], label= "initial Sp", color= "darkgreen")
     plt.scatter(original_data["Time (h)"].iloc[eol_H], original_data["Utot (V)"].iloc[eol_H], label= "determined EOL", color= "red")
     plt.hlines(eol_TH, original_data["Time (h)"].iloc[0], original_data["Time (h)"].iloc[-1], label= "EOL", color= "red", ls= "--")
-    plt.legend(loc= "best", fontsize= 12)
+    plt.legend(loc= "best", fontsize= 10)
     plt.grid(True)
     plt.xlabel("Time (h)", fontsize= 18)
     plt.ylabel("V", fontsize= 18)
